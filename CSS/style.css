@@ -1,0 +1,263 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	height: 100vh;
+}
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 10vh;
+	color: #ebf2fa;
+	font-style: italic;
+}
+
+h6 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: 2vh;
+	color: #ebf2fa;
+	font-style: italic;
+}
+
+p {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.item_1 {
+	z-index: 1000;
+}
+
+.container_grid {
+	display: grid;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 0.6, 1) 0%,
+		rgba(9, 9, 121, 1) 35%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+
+.box div {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+	top: 12%;
+	left: 42%;
+	animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+	top: 70%;
+	left: 50%;
+	animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+	top: 17%;
+	left: 6%;
+	animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+	top: 20%;
+	left: 60%;
+	animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+	top: 67%;
+	left: 10%;
+	animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+	top: 80%;
+	left: 70%;
+	animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+	top: 60%;
+	left: 70%;
+	animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+	top: 32%;
+	left: 25%;
+	animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+	top: 90%;
+	left: 25%;
+	animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+	top: 20%;
+	left: 80%;
+	animation: animate 5s linear infinite;
+}
+
+.item_2 {
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.game_pic {
+	height: 50vh;
+	width: 50vh;
+	margin-right: 2vh;
+}
+
+.account_pic {
+	height: 50vh;
+	width: 50vh;
+	border-radius: 10px;
+	margin-left: 2vh;
+}
+
+.container_img {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 93, 214, 0.339);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: 1s ease-in-out;
+	border-radius: 10px;
+}
+
+.overlay:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.overlay:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+}
+
+.overlay:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+	filter: blur(10px);
+}
+
+.overlay {
+	background: inherit;
+}
+
+.overlay:before {
+	background: inherit;
+}
+
+.overlay_pic_2:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.overlay_pic_2:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+}
+
+.overlay_pic_2:before {
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.8);
+	filter: blur(10px);
+}
+
+.overlay_pic_2 {
+	background: inherit;
+}
+
+.overlay_pic_2:before {
+	background: inherit;
+}
+
+.overlay_pic_2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(45, 139, 75, 0.15);
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transition: 1s ease-in-out;
+	border-radius: 10px;
+}
+
+.container_img:hover .overlay {
+	transform: scale(1);
+}
+
+.container_img:hover .overlay_pic_2 {
+	transform: scale(1);
+}
+
+.text {
+	color: #ebf2fa;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-style: italic;
+}
+
+.glow {
+	color: #fff;
+	text-align: center;
+	animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #349552, 0 0 8px #349552,
+			0 0 9px #349552, 0 0 10px #349552, 0 0 11px #349552;
+	}
+
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 6px #00b6b6e8, 0 0 7px #00b6b6e8,
+			0 0 8px #00b6b6e8, 0 0 9px #00b6b6e8, 0 0 10px #00b6b6e8,
+			0 0 11px #00b6b6e8;
+	}
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(0) translateY(0) rotate(0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.3) translateY(-90px) rotate(360deg);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <div class="choosing-side show" id="choosingSide">
+            <div>
+                <h1 class="glow">Choose your fate!</h1>
+            </div>
+            <div>
+                <button id="x_button" class="x_button"></button>
+                <button id="c_button" class="c_button"></button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="item item_1">
+                <div class="music-container" id="music-container">
+                    <div class="music-info">
+                        <h4 id="title"></h4>
+                        <div class="progress-container" id="progress-container">
+                            <div class="progress" id="progress"></div>
+                        </div>
+                    </div>
+
+                    <audio src="BFG.mp3" id="audio"></audio>
+
+                    <div class="img-container">
+                        <img src="Doom.png" alt="music-cover" id="cover"/>
+                    </div>
+                    <div class="navigation">
+                        <button id="prev" class="action-btn">
+                            <img src="backwards.png" alt="" class="control_buttons rotate">
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <img src="play.png" alt="" class="play hidden control_buttons">
+                            <img src="pause.png" alt="" class="pause control_buttons">
+                        </button>
+                        <button id="next" class="action-btn">
+                            <img src="forward.png" alt="" class="control_buttons rotate">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item item_2">
+                <div class="board x" id="board">
+                    <div class="cell " data-cell></div>
+                    <div class="cell " data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                </div>
+            </div>
+            <div class="item item_3">
+                <a href="/">
+                    <button class="nav">Home</button>
+                </a>
+                <div class="white_space"></div>
+                <a href="/account">
+                    <button class="nav">Log in</button>
+                </a>
+            </div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <div data-winning-message-text class="glow"></div>
+            <button id="restartButton">Restart</button>
+        </div>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+</html></div></div></body></html>
