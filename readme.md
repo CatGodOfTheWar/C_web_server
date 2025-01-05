@@ -1,17 +1,20 @@
 # Web Server Project
 
 ## Overview
+
 This project is a web server written in C that can serve various types of files including HTML, CSS, JavaScript, images (PNG), and music (MP3). It also includes a basic database that logs all files retrieved by the server.
 
 ## Features
-- Serve HTML files
-- Serve CSS files
-- Serve JavaScript files
-- Serve PNG images
-- Serve MP3 music files
-- Log all file retrievals in a SQLite database
+
+- **Serve HTML Files**: Handles serving HTML files.
+- **Serve CSS Files**: Handles serving CSS files.
+- **Serve JavaScript Files**: Handles serving JavaScript files.
+- **Serve PNG Images**: Handles serving PNG image files.
+- **Serve MP3 Music Files**: Handles serving MP3 music files.
+- **Logging**: Logs all file retrievals in a SQLite database.
 
 ## Project Structure
+
 ```plaintext
 .
 ├── compile.sh
@@ -57,59 +60,39 @@ This project is a web server written in C that can serve various types of files 
 ├── w_error.o
 ```
 
-## File Descriptions
-- **compile.sh**: Shell script to compile the C source files and link them into an executable.
-- **create.c**: Contains the function to create a socket and bind it to a port.
-- **css_js.c**: Handles serving CSS and JavaScript files.
-- **handle_html.c**: Handles serving HTML files.
-- **image_music.c**: Handles serving image and music files.
-- **logs.c**: Logs file retrievals to a SQLite database.
-- **main.c**: The main entry point of the server application.
-- **r_error.c**: Handles 404 errors.
-- **w_error.c**: Handles write errors.
+## Installation
 
-## HTML Files
-- **HTML/account.html**: Account page.
-- **HTML/index.html**: Home page.
-- **HTML/tic_tac_toe.html**: Tic Tac Toe game page.
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/yourusername/web-server-project.git
+    cd web-server-project
+    ```
 
-## CSS Files
-- **CSS/style.css**: General styles.
-- **CSS/styleAccount.css**: Styles for the account page.
-- **CSS/styleGame.css**: Styles for the Tic Tac Toe game page.
+2. **Install dependencies**:
+    ```sh
+    sudo apt-get install build-essential sqlite3
+    ```
 
-## JavaScript Files
-- **JS/function.js**: Placeholder for general JavaScript functions.
-- **JS/functionAccount.js**: Placeholder for account page JavaScript functions.
-- **JS/functionGame.js**: JavaScript for the Tic Tac Toe game.
-- **JS/musicplayer.js**: JavaScript for the music player.
+## Usage
 
-## Headers
-- **INCLUDE/create.h**: Header for `create.c`.
-- **INCLUDE/css_js.h**: Header for `css_js.c`.
-- **INCLUDE/handle_html.h**: Header for `handle_html.c`.
-- **INCLUDE/image_music.h**: Header for `image_music.c`.
-- **INCLUDE/logs.h**: Header for `logs.c`.
-- **INCLUDE/r_error.h**: Header for `r_error.c`.
-- **INCLUDE/w_error.h**: Header for `w_error.c`.
+1. **Compile the project**:
+    ```sh
+    ./compile.sh
+    ```
 
-## How to Compile
-To compile the project, run the following command:
-```sh
-./compile.sh
-```
-
-## How to Run
-After compiling, the server can be started with:
-```sh
-./main
-```
+2. **Run the application**:
+    ```sh
+    ./main
+    ```
 
 ## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
+
 For any inquiries or support, please contact [chirieacandrei@proton.me](mailto:chirieacandrei@proton.me).
